@@ -1,0 +1,43 @@
+ 
+ @import '../wxsys/comps/image/css/image.wxss';
+ 
+ @import '../wxsys/comps/tabs/css/tabs.wxss';
+ 
+ @import '../wxsys/comps/row/css/row.wxss';
+ 
+ @import '../wxsys/comps/page/css/page.wxss';
+ 
+ @import '../wxsys/comps/toptips/css/toptips.wxss';
+ 
+ @import '../wxsys/comps/panel/css/panel.wxss';
+ 
+ @import './common.wxss';
+
+.c-width{
+width:50%;
+}
+
+.c-page{
+color:#FFFFFF;
+}
+
+.c-changered1{
+background-color:#F4CCCC;
+}
+
+.c-changered2{
+background-color:#EA9999;
+}
+
+.c-changered3{
+background-color:#E06666;
+}
+
+.c-changered4{
+background-color:#ea4646;
+}
+
+.c-changered5{
+background-color:#CC0000;
+}
+

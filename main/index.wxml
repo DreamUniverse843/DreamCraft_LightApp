@@ -1,0 +1,65 @@
+<view class="x-page" id="page" style="">
+
+<view id="inVisibleCompContainer"></view>
+
+<view class="x-panel x-full" id="panel">
+<view class="x-panel-content" id="content" style="top:0px;bottom:0px;background-color:#B4A7D6">
+<view id="view">
+<view class="x-row" id="row" style="position:absolute;right:0px;left:0px;top:40px;text-align:center">
+<view class="x-col" id="col1">
+<image class="weui-img weui-img_circle" id="image1" mode="scaleToFill" src="{{image1.url}}" style="width:33%;height:120px"></image></view></view>
+<view class="x-row x-row-center" id="row2" style="position:absolute;right:0px;left:0px;top:185px;text-align:center">
+<view class="x-col" id="col6"/>
+<view class="x-col" id="col7">
+<text id="text" style="color:#ffffff;font-size:20px;font-family:楷体,楷体_GB2312, SimKai;font-weight: bold">{{text.text}}</text></view>
+<view class="x-col" id="col8"/></view>
+<view class="x-row x-row-center" id="row4" style="position:absolute;right:0px;left:0px;top:220px;text-align:center">
+<view class="x-col" id="col12"/>
+<view class="x-col x-col-90" id="col13">
+<text id="text2" style="color:#ffffff;font-size:20px;font-family:楷体,楷体_GB2312, SimKai;font-weight: bold;width:247px;height:25px">{{text2.text}}</text></view>
+<view class="x-col" id="col14"/></view></view>
+<view activeClass="c-page" class="weui-tab" id="tabs2" imgPosition="top" style="position:absolute;top:55%;left:0px;right:0px">
+<view class="weui-navbar" id="tabnavs2" style="font-family:楷体,楷体_GB2312, SimKai">
+<view class="weui-navbar__item weui-navbar__title {{tabs2.content == 'tab1' ? 'c-page' : ''}}" content="tab1" id="tabnav11" data-content="tab1" data-compid="{{tabnav11.compid}}" data-bindtap="{{tabs2.compid}}:tabNavClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind">
+<image class="weui-img tabs-img d-wx-image tabs-img-top" id="image17" mode="scaleToFill" src="{{image17.url}}" style="display:none"></image>
+<text id="text28">{{text28.text}}</text></view>
+<view class="weui-navbar__item  weui-navbar__title {{tabs2.content == 'tabcontent9' ? 'c-page' : ''}}" content="tabcontent9" id="tabnav12" data-content="tabcontent9" data-compid="{{tabnav12.compid}}" data-bindtap="{{tabs2.compid}}:tabNavClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind">
+<image class="weui-img tabs-img d-wx-image tabs-img-top" id="image18" mode="scaleToFill" src="{{image18.url}}" style="display:none"></image>
+<text id="text29">{{text29.text}}</text></view>
+<view class="weui-navbar__item  weui-navbar__title {{tabs2.content == 'tabcontent10' ? 'c-page' : ''}}" content="tabcontent10" id="tabnav13" data-content="tabcontent10" data-compid="{{tabnav13.compid}}" data-bindtap="{{tabs2.compid}}:tabNavClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind">
+<image class="weui-img tabs-img d-wx-image tabs-img-top" id="image19" mode="scaleToFill" src="{{image19.url}}" style="display:none"></image>
+<text id="text30">{{text30.text}}</text></view>
+<view class="weui-navbar__item  weui-navbar__title {{tabs2.content == 'tabcontent12' ? 'c-page' : ''}}" content="tabcontent12" id="tabnav15" data-content="tabcontent12" data-compid="{{tabnav15.compid}}" data-bindtap="{{tabs2.compid}}:tabNavClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind">
+<image class="weui-img tabs-img d-wx-image tabs-img-top" id="image21" mode="scaleToFill" src="{{image21.url}}" style="display:none"></image>
+<text id="text34">{{text34.text}}</text></view></view>
+<view class="weui-tab__panel" id="tabcontents2">
+<view class="weui-tab__content" id="tab1" style="background-color:#8d7cc3;margin-left:10px;margin-bottom:10px;margin-right:10px;margin-top:10px; {{(tabs2.content != 'tab1') ? 'display:none!important' : ''}}">
+<view class="x-row" id="row7">
+<view class="x-col" id="col23">
+<text id="text5" style="color:#FFFFFF;font-size:12px">{{text5.text}}</text></view></view>
+<view class="x-row" id="row11">
+<view class="x-col" id="col35">
+<text id="text7" style="color:#FFFFFF;font-size:12px">{{text7.text}}</text></view></view>
+<view class="x-row" id="row12">
+<view class="x-col" id="col37">
+<text id="text9" style="color:#FFFFFF;font-size:12px">{{text9.text}}</text></view></view></view>
+<view class="weui-tab__content" id="tabcontent9" style="margin-left:10px;margin-bottom:110px;margin-right:10px;margin-top:10px; {{(tabs2.content != 'tabcontent9') ? 'display:none!important' : ''}}">
+<view _created="true" id="list" label="动态列表" wx:for-item="listitem" wx:for-index="listindex" wx:for="{{list.items}}" wx:key="_key" data-index="{{listindex}}" data-idcolumn="{{listitem.fid}}" data-compid="{{list.compid}}" data-pageid="{{__pageid__}}" data-capture-bindtap="{{list.compid}}:onRowClick" capture-bind:tap="dispatchCaptureBind">
+<view class="x-row" id="row17" style="">
+<view class="x-col" id="col50" style="background-color:#8d7cc3;margin-bottom:10px;margin-right:10px;margin-left:10px;margin-top:10px;border-left:1px solid #d9d2e9">
+<image class="weui-img weui-img_circle" id="image10" mode="scaleToFill" src="{{listitem.$children.image10.url}}" style="width:10%;height:30px;position:absolute;left:-3px"></image>
+<view class="x-row" id="row21">
+<view class="x-col" id="col61">
+<text id="text19" style="color:#FFFFFF;font-weight: bold">{{listitem.$children.text19.text}}</text></view></view>
+<view class="x-row" id="row19">
+<view class="x-col" id="col55">
+<text id="text24" style="color:#FFFFFF;font-size:12px">{{listitem.$children.text24.text}}</text></view></view></view></view></view></view>
+<view class="weui-tab__content" id="tabcontent10" style="background-color:#8d7cc3;margin-left:10px;margin-right:10px;margin-top:10px;margin-bottom:10px; {{(tabs2.content != 'tabcontent10') ? 'display:none!important' : ''}}">
+<text id="text3" style="width:340px;height:49px;color:#ffffff;font-family:宋体,SimSun;font-size:18px">{{text3.text}}</text></view>
+<view class="weui-tab__content" id="tabcontent12" style="background-color:#8d7cc3;margin-left:10px;margin-bottom:10px;margin-right:10px;margin-top:10px; {{(tabs2.content != 'tabcontent12') ? 'display:none!important' : ''}}">
+<view _created="true" id="list3" label="动态列表3" style="width:50%;display:inline-block" wx:for-item="list3item" wx:for-index="list3index" wx:for="{{list3.items}}" wx:key="_key" data-index="{{list3index}}" data-idcolumn="{{list3item.fid}}" data-compid="{{list3.compid}}" data-pageid="{{__pageid__}}" data-capture-bindtap="{{list3.compid}}:onRowClick" capture-bind:tap="dispatchCaptureBind">
+<view id="view3" style="margin-top:10px;margin-left:5px;margin-right:5px">
+<image class="weui-img" id="image2" mode="scaleToFill" src="{{list3item.$children.image2.url}}" style="width:100%;height:100px"></image>
+<view class="x-row x-row-center" id="row1" style="text-align: center">
+<view class="x-col" id="col3">
+<text id="text1" style="color:#ffffff;font-size:13px">{{((list3item.fmiaoshu)===null || (list3item.fmiaoshu)===undefined || (list3item.fmiaoshu)==='') ? '' : (list3item.fmiaoshu)}}</text></view></view></view></view></view></view></view></view></view><view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}"><view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view></view></view>
