@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DreamCraft MainCilent</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">DreamCraft Community</string>
+    <string name="nav_header_subtitle">www.dreamcraft.com.cn</string>
+    <string name="nav_header_desc">顶部导航栏</string>
+    <string name="action_settings">设置</string>
+
+    <string name="menu_home">主页</string>
+    <string name="menu_gallery">图册</string>
+    <string name="menu_slideshow">滑动效果展示</string>
+</resources>
